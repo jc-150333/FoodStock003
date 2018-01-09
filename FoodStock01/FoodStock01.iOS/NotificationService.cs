@@ -40,7 +40,7 @@ namespace FoodStock01
             {
                 var content = new UNMutableNotificationContent();
                 content.Title = title;
-                content.Subtitle = title;
+                content.Subtitle = subtitle;
                 content.Body = body;
                 content.Sound = UNNotificationSound.Default;
 

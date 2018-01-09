@@ -20,6 +20,11 @@
                     HorizontalOptions="End"
                     Clicked="OnSearch_Clicked"/>
 
+            <Button Image="search24.png"
+                    Text="通知"
+                    HorizontalOptions="End"
+                    Clicked="OnNotificationClick"/>
+
             <!--<Button Text="更新"
                     x:Name="Update_Button"
                     Grid.Column="2" Grid.Row="0"

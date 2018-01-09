@@ -57,7 +57,7 @@ namespace FoodStock01
                  {
                      if (err != null)
                      {
-                         LogUtility.OutPutError(err.LocalizedFailureReason + System.Environment.NewLine + err.LocalizedDescription);
+                         //LogUtility.OutPutError(err.LocalizedFailureReason + System.Environment.NewLine + err.LocalizedDescription);
                      }
                  });
                 UIApplication.SharedApplication.ApplicationIconBadgeNumber += 1; //アイコン上に表示するバッジの数値

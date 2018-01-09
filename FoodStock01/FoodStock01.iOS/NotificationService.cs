@@ -14,7 +14,7 @@ namespace FoodStock01
         {
             //if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
             //{
-                UNAuthorizationOptions types = UNAuthorizationOptions.Badge |
+            FoodStock01.NotificationService.UNAuthorizationOptions types = UNAuthorizationOptions.Badge |
                                                 UNAuthorizationOptions.Sound |
                                                 UNAuthorizationOptions.Alert;
 

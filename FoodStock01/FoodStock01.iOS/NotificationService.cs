@@ -8,12 +8,10 @@ using UIKit;
 
 using Xamarin.Forms;
 
-
+[assembly: Dependency(typeof(NotificationService))]
 
 namespace FoodStock01.iOS
 {
-    [assmbly: Dependency(typeof(NotificationService))]
-
     class NotificationService : INotificationService
     {
         public void Regist()

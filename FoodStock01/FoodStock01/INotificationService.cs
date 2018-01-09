@@ -5,8 +5,8 @@ using System.Text;
 
 using Xamarin.Forms;
 
-namespace FoodStock01
-{
+//namespace FoodStock01
+//{
     public interface INotificationService
     {
         //iOS用の登録
@@ -18,4 +18,4 @@ namespace FoodStock01
         //通知を解除する
         void Off();
     }
-}
+//}

@@ -12,7 +12,7 @@ using Xamarin.Forms;
 
 namespace FoodStock01.iOS
 {
-    class NotificationService : INotificationService
+    public class NotificationService : INotificationService
     {
         public void Regist()
         {

@@ -42,7 +42,7 @@ namespace FoodStock01
                 content.Title = title;
                 content.Subtitle = title;
                 content.Body = body;
-                content.Sound = UNNotificationSound.Defoult;
+                content.Sound = UNNotificationSound.Default;
 
                 var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(5, false);
 

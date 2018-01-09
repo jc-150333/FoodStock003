@@ -2,6 +2,8 @@
 using Foundation;
 using UIKit;
 
+using UserNotifications;
+
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(FoodStock01.NotificationService))]
@@ -14,7 +16,7 @@ namespace FoodStock01
         {
             //if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
             //{
-            FoodStock01.NotificationService.UNAuthorizationOptions types = UNAuthorizationOptions.Badge |
+                UNAuthorizationOptions types = UNAuthorizationOptions.Badge |
                                                 UNAuthorizationOptions.Sound |
                                                 UNAuthorizationOptions.Alert;
 

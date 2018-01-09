@@ -4,7 +4,7 @@ using UIKit;
 
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(NotificationService))]
+[assembly: Dependency(typeof(FoodStock01.NotificationService))]
 
 namespace FoodStock01
 {

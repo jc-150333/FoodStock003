@@ -16,7 +16,7 @@ namespace FoodStock01
 
         public string F_name { get; set; } //食材名
 
-        public int F_result { get; set; } //登録時点での、消費期限までの日数
+        public int F_result { get; set; } //登録時点での消費期限までの日数
 
         public DateTime F_date { get; set; } //消費期限
 

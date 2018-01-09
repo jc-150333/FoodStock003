@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Foundation;
 using UIKit;
 
@@ -10,8 +6,7 @@ using Xamarin.Forms;
 
 [assembly: Dependency(typeof(NotificationService))]
 
-namespace FoodStock01.iOS
-{
+
     public class NotificationService : INotificationService
     {
         public void Regist()
@@ -74,4 +69,3 @@ namespace FoodStock01.iOS
             });
         }
     }
-}

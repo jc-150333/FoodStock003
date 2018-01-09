@@ -12,8 +12,8 @@ namespace FoodStock01
     {
         public void Regist()
         {
-            if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
-            {
+            //if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
+            //{
                 UNAuthorizationOptions types = UNAuthorizationOptions.Badge |
                                                 UNAuthorizationOptions.Sound |
                                                 UNAuthorizationOptions.Alert;
@@ -29,7 +29,7 @@ namespace FoodStock01
 
                      }
                  });
-            }
+            //}
         }
 
         public void On(string title, string subtitle, string body)

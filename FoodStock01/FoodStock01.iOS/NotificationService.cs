@@ -6,7 +6,8 @@ using Xamarin.Forms;
 
 [assembly: Dependency(typeof(NotificationService))]
 
-
+namespace FoodStock01
+{
     public class NotificationService : INotificationService
     {
         public void Regist()
@@ -31,7 +32,7 @@ using Xamarin.Forms;
             }
         }
 
-        public void On(string title,string subtitle,string body)
+        public void On(string title, string subtitle, string body)
         {
             UIApplication.SharedApplication.InvokeOnMainThread(delegate
             {
@@ -69,3 +70,4 @@ using Xamarin.Forms;
             });
         }
     }
+}

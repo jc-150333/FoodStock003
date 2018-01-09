@@ -50,7 +50,7 @@ namespace FoodStock01
                 content.UserInfo = NSDictionary.FromObjectAndKey(new NSString("notifyValue"), new NSString("notifyKey"));
                 var request = UNNotificationRequest.FromIdentifier(requestID, content, trigger);
 
-                UNUserNotificationCenter.Current.Delegate = new LocalNotificationCenterDelegate();
+                //UNUserNotificationCenter.Current.Delegate = new LocalNotificationCenterDelegate();
 
                 //ローカル通知を予約する
                 UNUserNotificationCenter.Current.AddNotificationRequest(request, (err) =>

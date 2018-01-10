@@ -72,7 +72,12 @@
                     VerticalOptions="Center"
                     x:Name="Select_Max"
                     Clicked="Select_Max_Clicked"/>
-            
+
+            <TimePicker Format="T"
+                            x:Name="TPicker"
+                            IsEnabled="True"
+                            DateSelected="TPicker_TimeSelected" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

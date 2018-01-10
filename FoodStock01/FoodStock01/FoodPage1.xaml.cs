@@ -31,7 +31,7 @@ namespace FoodStock01
 
                 //DisplayAlert("期限通知", "期限が近づいている食材があります", "OK");//試し
 
-                DependencyService.Get<INotificationService>().On("タイトルテスト", "スブタイトル", "本文テスト");
+                DependencyService.Get<INotificationService>().On("タイトルテスト", "スブタイトル", FoodModel.SelectFood02());
             }
             else
             {

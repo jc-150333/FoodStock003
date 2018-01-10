@@ -69,5 +69,14 @@ namespace FoodStock01
 
             DisplayAlert("最新の通知日数", select_max.ToString(), "OK");
         }
+
+        private void TPicker_TimeSelected(object sender, DateChangedEventArgs e)
+        {
+            //yyyymmdd = new DateTime(TPicker.Date.Year, TPicker.Date.Month);
+
+            //s = yyyymmdd - now;
+
+            //result = s.Days;
+        }
     }
 }

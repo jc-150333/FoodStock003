@@ -44,7 +44,7 @@ namespace FoodStock01
                 content.Body = body;
                 content.Sound = UNNotificationSound.Default;
 
-                var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(15, false);
+                var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(5, false);
 
                 //日時を指定する場合は以下の情報を付与
                 NSDateComponents components = new NSDateComponents();
@@ -75,7 +75,7 @@ namespace FoodStock01
                          //LogUtility.OutPutError(err.LocalizedFailureReason + System.Environment.NewLine + err.LocalizedDescription);
                      }
                  });
-                //UIApplication.SharedApplication.ApplicationIconBadgeNumber += 1; //アイコン上に表示するバッジの数値
+                UIApplication.SharedApplication.ApplicationIconBadgeNumber += 1; //アイコン上に表示するバッジの数値
             });
         }
 

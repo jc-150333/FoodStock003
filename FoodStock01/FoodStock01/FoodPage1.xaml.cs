@@ -20,6 +20,7 @@ namespace FoodStock01
             //通知
             DependencyService.Get<INotificationService>().Regist();
 
+            DependencyService.Get<INotificationService>().Off();
 
             if (FoodModel.SelectFood02() != null)
             {

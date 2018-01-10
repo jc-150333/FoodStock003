@@ -49,13 +49,13 @@ namespace FoodStock01
                 //日時を指定する場合は以下の情報を付与
                 NSDateComponents components = new NSDateComponents();
                 components.TimeZone = NSTimeZone.DefaultTimeZone;
-                components.Year = LocalDateTime.Year;
-                components.Month = LocalDateTime.Month;
-                components.Day = LocalDateTime.Day;
+                components.Year = 2018;
+                components.Month = 1;
+                components.Day = 10;
                 //components.Hour = _notifyDate.LocalDateTime.Hour;
                 components.Hour = 10;
                 //components.Minute = _notifyDate.LocalDateTime.Minute;
-                components.Minute = 0;
+                components.Minute = 30;
                 components.Second = 0;
                 var calendarTrigger = UNCalendarNotificationTrigger.CreateTrigger(components, false);
 

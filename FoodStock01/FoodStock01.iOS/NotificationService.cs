@@ -44,11 +44,26 @@ namespace FoodStock01
                 content.Body = body;
                 content.Sound = UNNotificationSound.Default;
 
-                var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(1, false);
+                var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(15, false);
+
+                //日時を指定する場合は以下の情報を付与
+                NSDateComponents components = new NSDateComponents();
+                components.TimeZone = NSTimeZone.DefaultTimeZone;
+                components.Year = _notifyDate.LocalDateTime.Year;
+                components.Month = _notifyDate.LocalDateTime.Month;
+                components.Day = _notifyDate.LocalDateTime.Day;
+                //components.Hour = _notifyDate.LocalDateTime.Hour;
+                components.Hour = 10;
+                //components.Minute = _notifyDate.LocalDateTime.Minute;
+                components.Minute = 0;
+                components.Second = 0;
+                var calendarTrigger = UNCalendarNotificationTrigger.CreateTrigger(components, false);
 
                 var requestID = "notifyKey";
                 content.UserInfo = NSDictionary.FromObjectAndKey(new NSString("notifyValue"), new NSString("notifyKey"));
-                var request = UNNotificationRequest.FromIdentifier(requestID, content, trigger);
+                //var request = UNNotificationRequest.FromIdentifier(requestID, content, trigger);
+
+                var request = UNNotificationRequest.FromIdentifier(requestID, content, calendarTrigger);
 
                 //UNUserNotificationCenter.Current.Delegate = new LocalNotificationCenterDelegate();
 

@@ -17,5 +17,8 @@ namespace FoodStock01
 
         //通知を解除する
         void Off();
+
+        //0にする
+        void return0();
     }
 }

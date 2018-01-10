@@ -44,7 +44,7 @@ namespace FoodStock01
                 content.Body = body;
                 content.Sound = UNNotificationSound.Default;
 
-                var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(5, false);
+                var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(1, false);
 
                 var requestID = "notifyKey";
                 content.UserInfo = NSDictionary.FromObjectAndKey(new NSString("notifyValue"), new NSString("notifyKey"));
@@ -71,6 +71,14 @@ namespace FoodStock01
                 //UNUserNotificationCenter.Current.RemovePendingNotificationRequests(new string[] { "notifyKey" });
 
                 UNUserNotificationCenter.Current.RemoveAllDeliveredNotifications();
+            });
+        }
+
+        public void return0()
+        {
+            UIApplication.SharedApplication.InvokeOnMainThread(delegate
+            {
+                UIApplication.SharedApplication.ApplicationIconBadgeNumber = 0;
             });
         }
     }

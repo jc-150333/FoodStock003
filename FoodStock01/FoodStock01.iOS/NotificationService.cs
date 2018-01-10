@@ -49,9 +49,9 @@ namespace FoodStock01
                 //日時を指定する場合は以下の情報を付与
                 NSDateComponents components = new NSDateComponents();
                 components.TimeZone = NSTimeZone.DefaultTimeZone;
-                components.Year = 2018;
-                components.Month = 1;
-                components.Day = 10;
+                components.Year = DateTime.Now.Year;
+                components.Month = DateTime.Now.Month;
+                components.Day = DateTime.Now.Day;
                 //components.Hour = _notifyDate.LocalDateTime.Hour;
                 components.Hour = 10;
                 //components.Minute = _notifyDate.LocalDateTime.Minute;

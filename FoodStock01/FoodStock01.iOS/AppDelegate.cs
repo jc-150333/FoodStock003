@@ -35,6 +35,16 @@ namespace FoodStock01.iOS
 
             return System.IO.Path.Combine(libFolder, filename);
         }
+
+        public override void ReceivedLocalNotification(UIApplication application, UILocalNotification notification)
+        {
+            //画面に通知を表示するダイアログの設定をします
+            var alert = new UIAlertView();
+            alert.Title = notification.AlertTitle;
+            alert.Message = notification.AlertBody;
+            alert.AddButton(notification.AlertAction);
+            alert.Show();
+        }
     }
 }
 

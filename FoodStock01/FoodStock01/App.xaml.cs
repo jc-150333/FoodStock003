@@ -10,11 +10,14 @@ namespace FoodStock01
 {
     public partial class App : Application
     {
+
         //データベースのパスを格納
         public static string dbPath;
 
         public App(string dbPath)
         {
+            DependencyService.Get<INotificationService>().return0();
+
             //AppのdbPathに引数のパスを設定
             App.dbPath = dbPath;
 

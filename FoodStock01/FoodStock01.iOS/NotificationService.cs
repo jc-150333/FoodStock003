@@ -68,7 +68,9 @@ namespace FoodStock01
         {
             UIApplication.SharedApplication.InvokeOnMainThread(delegate
             {
-                UNUserNotificationCenter.Current.RemovePendingNotificationRequests(new string[] { "notifyKey" });
+                //UNUserNotificationCenter.Current.RemovePendingNotificationRequests(new string[] { "notifyKey" });
+
+                UNUserNotificationCenter.Current.RemoveAllDeliveredNotifications();
             });
         }
     }

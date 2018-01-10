@@ -20,6 +20,5 @@ namespace FoodStock01
 
         //0にする
         void return0();
-        void On(string v1, string v2, List<FoodModel> list);
     }
 }

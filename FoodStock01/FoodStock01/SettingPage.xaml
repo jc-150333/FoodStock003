@@ -76,7 +76,7 @@
             <TimePicker Format="T"
                             x:Name="TPicker"
                             IsEnabled="True"
-                            DateSelected="TPicker_TimeSelected" />
+                            PropertyChanged="TPicker_TimeChanged" />
 
         </StackLayout>
     </ContentPage.Content>

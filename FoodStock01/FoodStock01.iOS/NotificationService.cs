@@ -56,6 +56,7 @@ namespace FoodStock01
                 components.Hour = 10;
                 //components.Minute = _notifyDate.LocalDateTime.Minute;
                 components.Minute = 30;
+                //components.Minute = ;
                 components.Second = 0;
                 var calendarTrigger = UNCalendarNotificationTrigger.CreateTrigger(components, false);
 

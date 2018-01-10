@@ -16,7 +16,6 @@ namespace FoodStock01
 
         public App(string dbPath)
         {
-            DependencyService.Get<INotificationService>().return0();
 
             //AppのdbPathに引数のパスを設定
             App.dbPath = dbPath;

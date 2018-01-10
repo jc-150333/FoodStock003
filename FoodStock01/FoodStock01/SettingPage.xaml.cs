@@ -16,6 +16,10 @@ namespace FoodStock01
 
         int select_max;
 
+        DateTime p_hour;
+
+        DateTime p_minute;
+
         public SettingPage(string title)
         {
 
@@ -70,9 +74,13 @@ namespace FoodStock01
             DisplayAlert("最新の通知日数", select_max.ToString(), "OK");
         }
 
-        private void TPicker_TimeSelected(object sender, DateChangedEventArgs e)
+        private void TPicker_TimeChanged(object sender, DateChangedEventArgs e)
         {
-            //yyyymmdd = new DateTime(TPicker.Date.Year, TPicker.Date.Month);
+            p_hour = new DateTime(TPicker.Time.Hours);
+
+            p_minute = new DateTime(TPicker.Time.Minutes);
+
+            //yyymmdd = new DateTime(TPicker.Date.Year, TPicker.Date.Month);
 
             //s = yyyymmdd - now;
 

@@ -66,7 +66,7 @@ namespace FoodStock01
 
                 //var request = UNNotificationRequest.FromIdentifier(requestID, content, calendarTrigger);
 
-                //UNUserNotificationCenter.Current.Delegate = new LocalNotificationCenterDelegate();
+                UNUserNotificationCenter.Current.Delegate = new LocalNotificationCenterDelegate();
 
                 //ローカル通知を予約する
                 UNUserNotificationCenter.Current.AddNotificationRequest(request, (err) =>

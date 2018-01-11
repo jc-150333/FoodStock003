@@ -66,7 +66,7 @@ namespace FoodStock01
 
                 //var request = UNNotificationRequest.FromIdentifier(requestID, content, calendarTrigger);
 
-                UNUserNotificationCenter.Current.Delegate = new LocalNotificationCenterDelegate();
+                //UNUserNotificationCenter.Current.Delegate = new LocalNotificationCenterDelegate();
 
                 //ローカル通知を予約する
                 UNUserNotificationCenter.Current.AddNotificationRequest(request, (err) =>
@@ -84,9 +84,9 @@ namespace FoodStock01
         {
             UIApplication.SharedApplication.InvokeOnMainThread(delegate
             {
-                //UNUserNotificationCenter.Current.RemovePendingNotificationRequests(new string[] { "notifyKey" });
+                UNUserNotificationCenter.Current.RemovePendingNotificationRequests(new string[] { "notifyKey" });
 
-                UNUserNotificationCenter.Current.RemoveAllDeliveredNotifications();
+                //UNUserNotificationCenter.Current.RemoveAllDeliveredNotifications();
             });
         }
 
